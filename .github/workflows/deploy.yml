@@ -1,5 +1,10 @@
 name: deploy
 
+permissions:
+  pull-requests: write
+  contents: write
+  repository-projects: write
+
 on:
   push:
     branches:
@@ -40,5 +45,3 @@ jobs:
       run:  yes | bash bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }}
                     --src ${{ steps.setup.outputs.SRC_BRANCH }} 
                     --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }} 
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
