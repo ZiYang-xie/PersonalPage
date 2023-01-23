@@ -267,7 +267,8 @@ blockquote {
     }
   }
   .contact-note {
-    font-size: 0.8rem;
+    color: grey;
+    font-size: 5pt;
   }
 }
 
@@ -496,14 +497,14 @@ footer.sticky-bottom {
       .preview {
         width: 100%;
         min-width: 80px;
-        max-width: 200px;
+        max-width: 300px;
       }
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
         abbr {
           display: inline-block;
-          background-color: var(--global-theme-color);
+          background-color: var(--global-blue-dark-color);
           padding-left: 1rem;
           padding-right: 1rem;
           a {
@@ -519,6 +520,8 @@ footer.sticky-bottom {
         }
       }
       .title {
+        font-size: 19px;
+        padding-bottom: 5px;
         font-weight: bolder;
       }
       .author {
