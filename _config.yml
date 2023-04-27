@@ -65,13 +65,13 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 github_username: Ziyang-xie # your GitHub user name
-cv: '' # your CV link
+cv: '/assets/pdf/cv_pdf.pdf' # your CV link
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: f3TDPxcAAAAJ # your Google Scholar ID
+scholar_userid: heomgGYAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
@@ -98,7 +98,7 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 contact_note: >
   <i>
   Template from <a herf=''>https://github.com/alshedivat/al-folio</a>al-folio <br>
-  last updated on 2023-02-28
+  last updated on 2023-04-27
   </i>
 
 # -----------------------------------------------------------------------------
