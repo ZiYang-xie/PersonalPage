@@ -2,10 +2,11 @@
 layout: about
 title: About
 permalink: /
-identity: Senior student
+identity: Senior student @ FDU -> Incoming MS student @ UIUC
 description: >
     <p> 
         Computer Science B.S. @ Fudan University, Shanghai. <br>
+        Incoming Computer Science M.S. @ UIUC. <br>
         <i>Let's embrace the endless possibilities and build something different!</i>
     </p>
           
