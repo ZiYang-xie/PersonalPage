@@ -6,7 +6,9 @@ identity: Computer Science M.S. @ UIUC
 description: >
     <p> 
         Grainger Engineering Departments, University of Illinois Urbana-Champaign<br>
+        B.S. in Computer Science, Fudan University<br><br>
         <i>Let's embrace the endless possibilities and build something different!</i>
+        <br>
     </p>
           
 profile:
