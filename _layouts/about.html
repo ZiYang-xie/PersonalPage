@@ -67,13 +67,14 @@ layout: default
             {%- include selected_papers.html %}
           {%- endif %}
 
-          <!-- Social -->
-          {%- if page.social %}
-            <hr class="post-separator" style="margin-top: 40px">
-            <div class="contact-note">
-              {{ site.contact_note }}
+          <!-- Education -->
+          <!-- {%- if page.education %}
+            <h3><a href="{{ '/education/' | relative_url }}" style="color: inherit;">Educations</a></h3>
+            <div class="education">
+              {{ education.html }}
             </div>
-          {%- endif %}
+          {%- endif %} -->
+
         </article>
 
 </div>
