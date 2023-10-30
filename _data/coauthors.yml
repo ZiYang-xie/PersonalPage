@@ -1,15 +1,23 @@
-"Li Zhang":
-  - firstname: ["Li"]
-    url: https://www.robots.ox.ac.uk/~lz/
-
-"Feihu Zhang":
+"Zhang":
+  - firstname: ["Junge"]
+    url: https://andy-zd.github.io/
   - firstname: ["Feihu"]
     url: http://www.feihuzhang.com/
+  - firstname: ["Li"]
+    url: https://lzrobots.github.io/
 
-"Junge Zhang":
-  - firstname: ["Junge"]
-    url: 
-
-"Wenye Li":
+"Li":
   - firstname: ["Wenye"]
     url: 
+
+"Pang":
+  - firstname: ["Ziqi"]
+    url: https://ziqipang.github.io/
+
+"Man":
+  - firstname: ["Yunze"]
+    url: https://yunzeman.github.io/
+
+"Wang":
+  - firstname: ["Yu-Xiong"]
+    url: https://yxw.web.illinois.edu/

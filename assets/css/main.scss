@@ -13,3 +13,7 @@ $max-content-width: {{ site.max_width }};
   "base",
   "distill"
 ;
+
+.coauthor{
+  color: var(--global-text-color);
+}

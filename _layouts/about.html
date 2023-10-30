@@ -52,17 +52,19 @@ layout: default
             {{ content }}
           </div>
 
+          <hr class="post-separator">
+
           <!-- News -->
           {% if page.news -%}
-            <h3><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h3>
-            <hr class="post-separator">
+            <h3><a href="{{ '/news/' | relative_url }}" style="color: inherit; font-family:Times, serif">News</a></h3>
             {%- include news.html %}
           {%- endif %}
 
+          <hr class="post-separator">
+
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h3>
-            <hr class="post-separator">
+            <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-family:Times, serif">Publications</a></h3>
             {%- include selected_papers.html %}
           {%- endif %}
 

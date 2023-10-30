@@ -22,8 +22,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 
 ---
-Currently, I am a first-year Computer Science master student at the University of Illinois at Urbana-Champaign (UIUC) supervised by Professor [Yuxiong Wang](https://yxw.web.illinois.edu/).   
+Currently, I am a first-year MSCS student at the University of Illinois at Urbana-Champaign (UIUC) supervised by Professor [Yuxiong Wang](https://yxw.web.illinois.edu/).   
   
 Previously, I completed my undergraduate studies at Fudan University, where I specialized in computer science and was actively involved in the [Zhang Vision Group](https://fudan-zvg.github.io/) led by [Li Zhang](https://www.robots.ox.ac.uk/~lz/). During the spring of 2022, I completed an autonomous research internship at [SenseTime](https://www.sensetime.com/cn), a leading company in the field of artificial intelligence.  
 
-My research interests  encompass various areas within computer vision, autonomous vehicles, and 3D generation. I have a strong research experience in object detection, scene/object reconstruction, and neural radiance fields (NeRFs). 
+My research interests encompass various areas within 3D vision, autonomous driving, and 3D reconstruction/generation. I have a strong research experience in 3D object detection, scene/object 3D reconstruction, and neural radiance fields (NeRFs). 
