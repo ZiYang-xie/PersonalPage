@@ -120,8 +120,20 @@
         {%- if entry.year -%}
           {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
         {%- endif -%}
+        {%- if entry.is_spotlight -%}
+          {%- capture entrytag -%}{{ " " }} | <i class="text-warning font-weight-bold">Spotlight*</i>{%- endcapture -%}
+        {%- elsif entry.is_oral -%} 
+          {%- capture entrytag -%}{{ " " }}| <i class="text-danger font-weight-bold">Oral*</i>{%- endcapture -%}
+        {%- else -%}
+          {%- capture entrytag -%}{%- endcapture -%}
+        {%- endif -%}
         {% assign entrytype_text = entrytype | strip_html | strip %}
-        {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+        {%- capture periodical -%}
+            {{ entrytype }}{%- if entrytype_text != "" and entryyear != "" -%}, 
+            {%- endif -%}{{ entrymonth }}{{ entryyear }}
+            {%- if entrytag != "" -%} {{ entrytag }}  
+            {%- endif -%}
+        {%- endcapture -%}
         <div class="periodical">
           {{ periodical | strip }}
         </div>
