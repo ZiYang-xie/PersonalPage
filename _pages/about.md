@@ -22,7 +22,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 
 ---
-Currently, I am a first-year MSCS student at the University of Illinois at Urbana-Champaign (UIUC). I've been working closely with [Prof. Shenlong Wang](https://shenlong.web.illinois.edu/) and [Prof. Yu-Xiong Wang](https://yxw.web.illinois.edu/) on various projects related to 3D vision and autonomous driving.
+I am currently an MSCS student at the University of Illinois at Urbana-Champaign (UIUC). I've been working closely with [Prof. Shenlong Wang](https://shenlong.web.illinois.edu/) and [Prof. Yu-Xiong Wang](https://yxw.web.illinois.edu/) on various projects related to 3D vision and autonomous driving.
+
+I'm also a tech-cofounder of [Manifold-S](https://www.manifold-s.com/). A startup that aims to provide a comprehensive solution for controllable 3D reconstruction and generation. Please check out our [website](https://www.manifold-s.com/) for more information.
   
 Previously, I completed my undergraduate studies at Fudan University, where I specialized in computer science and was actively involved in the [Zhang Vision Group](https://fudan-zvg.github.io/) led by [Li Zhang](https://www.robots.ox.ac.uk/~lz/). During the spring of 2022, I completed an autonomous research internship at [SenseTime](https://www.sensetime.com/cn), a leading company in the field of artificial intelligence.  
 
