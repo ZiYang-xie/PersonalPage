@@ -69,12 +69,37 @@ layout: default
           {%- endif %}
 
           <!-- Education -->
-          <!-- {%- if page.education %}
-            <h3><a href="{{ '/education/' | relative_url }}" style="color: inherit;">Educations</a></h3>
-            <div class="education">
-              {{ education.html }}
+          <h3><span style="color: inherit; font-family:Times, serif">Education</span></h3>
+          <div class="education" style="margin-bottom: 1rem;">
+            
+            <div class="education-entry" style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+              <img src="{{ '/assets/img/ucla_logo.png' | relative_url }}" alt="UCLA Logo" style="width: 90px; padding: 10px; height: auto; margin-right: 15px; object-fit: contain;"> 
+              <div>
+                <strong>University of California, Los Angeles</strong> <br>
+                <em>Incoming CS PhD</em> <br>
+              </div>
             </div>
-          {%- endif %} -->
+
+            <div class="education-entry" style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+              <img src="{{ '/assets/img/uiuc_logo.png' | relative_url }}" alt="UIUC Logo" style="width: 90px; padding: 10px; height: auto; margin-right: 15px; object-fit: contain;"> 
+              <div>
+                <strong>University of Illinois Urbana-Champaign</strong> <br>
+                <em>Master of Science in Computer Science (MSCS)</em> <br>
+                <em>Aug. 2023 – May 2025</em>
+              </div>
+            </div>
+
+            <div class="education-entry" style="display: flex; align-items: center; margin-bottom: 0rem;">
+              <img src="{{ '/assets/img/fudan_logo.png' | relative_url }}" alt="Fudan University Logo" style="width: 90px; padding: 10px; height: auto; margin-right: 15px; object-fit: contain;"> 
+              <div>
+                <strong>Fudan University</strong> <br>
+                <em>Bachelor of Science in Computer Science</em> <br>
+                <em>Sep. 2019 – June 2023</em>
+              </div>
+            </div>
+
+          </div>
+          
         </article>
 
 </div>

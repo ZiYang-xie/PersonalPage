@@ -28,4 +28,4 @@ I'm also the tech-cofounder of [Manifold-S](https://manifold-s.com/). A startup 
   
 Previously, I completed my undergraduate studies at Fudan University, where I specialized in computer science and was actively involved in the [Zhang Vision Group](https://fudan-zvg.github.io/) led by Prof. [Li Zhang](https://www.robots.ox.ac.uk/~lz/). During the spring of 2022, I completed an autonomous research internship at [SenseTime](https://www.sensetime.com/cn), a leading company in the field of artificial intelligence.  
 
-My research interests encompass various areas within 3D vision, multi-view geometry and autonomous driving. I have a strong research experience in 3D scene reconstruction / generation, and neural rendering. 
+My research interests encompass various areas within 3D vision, multi-view geometry and autonomous driving. I have a strong research experience in 3D scene reconstruction / generation, simulation and neural rendering. 
