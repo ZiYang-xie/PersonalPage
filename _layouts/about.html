@@ -3,6 +3,25 @@ layout: default
 ---
 
 <!-- about.html -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+  
+  /* Apply Lexend font to all text elements */
+  .post,
+  .post h1,
+  .post h2,
+  .post h3,
+  .post h4,
+  .post p,
+  .post div,
+  .post strong,
+  .post em,
+  .post span,
+  .post a {
+    font-family: 'Lexend', sans-serif !important;
+  }
+</style>
+
       <div class="post">
         <header class="post-header">
           <div class="row">
@@ -56,7 +75,7 @@ layout: default
 
           <!-- News -->
           {% if page.news -%}
-            <h3><a href="{{ '/news/' | relative_url }}" style="color: inherit; font-family:Times, serif">News</a></h3>
+            <h3><a href="{{ '/news/' | relative_url }}" style="color: inherit; font-family: 'Lexend', sans-serif; font-weight: bold;">News</a></h3>
             {%- include news.html %}
           {%- endif %}
 
@@ -64,12 +83,34 @@ layout: default
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-family:Times, serif">Publications</a></h3>
+            <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-family: 'Lexend', sans-serif; font-weight: bold;">Publications</a></h3>
             {%- include selected_papers.html %}
           {%- endif %}
 
+          <!-- Projects -->
+          <!-- <h3><span style="color: inherit; font-family: 'Lexend', sans-serif; font-weight: bold;">Projects</span></h3>
+          <div class="projects" style="margin-bottom: 1rem;">
+            <div class="project-entry" style="margin-bottom: 1rem;">
+              <h4 style="margin-bottom: 0.5rem;"><strong>WorldGen</strong></h4>
+              <p style="margin-bottom: 0.5rem;">A comprehensive world generation framework for 3D content creation.</p>
+              <div class="project-badges" style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+                <a href="https://github.com/ZiYang-xie/WorldGen" target="_blank">
+                  <img src="https://img.shields.io/github/stars/ZiYang-xie/WorldGen?style=for-the-badge&logo=github&logoColor=white&color=yellow&labelColor=black" alt="GitHub Stars">
+                </a>
+                <a href="https://worldgen.github.io/" target="_blank">
+                  <img src="https://img.shields.io/badge/Project-Page-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Project Page">
+                </a>
+                <a href="https://github.com/ZiYang-xie/WorldGen" target="_blank">
+                  <img src="https://img.shields.io/badge/Code-Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository">
+                </a>
+              </div>
+            </div>
+          </div> -->
+
+          <hr class="post-separator">
+
           <!-- Experience -->
-          <h3><span style="color: inherit; font-family:Times, serif">Experience</span></h3>
+          <h3><span style="color: inherit; font-family: 'Lexend', sans-serif; font-weight: bold;">Experience</span></h3>
           <div class="experience" style="margin-bottom: 1rem;">
 
           <div class="education-entry" style="display: flex; align-items: center; margin-bottom: 0.5rem;">
@@ -90,7 +131,7 @@ layout: default
           </div>
 
           <!-- Education -->
-          <h3><span style="color: inherit; font-family:Times, serif">Education</span></h3>
+          <h3><span style="color: inherit; font-family: 'Lexend', sans-serif; font-weight: bold;">Education</span></h3>
           <div class="education" style="margin-bottom: 1rem;">
             
             <div class="education-entry" style="display: flex; align-items: center; margin-bottom: 0.5rem;">
