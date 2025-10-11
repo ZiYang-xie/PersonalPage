@@ -5,8 +5,9 @@ permalink: /
 identity: 3DV Researcher, Startup Founder, AI Hacker
 description: >
     <p> 
-        Co-Founder, Manifolds-AI<br>
-        MSCS, University of Illinois Urbana-Champaign (UIUC)<br>
+        CS PhD Student @ UCLA<br>
+        Co-Founder @ Manifolds-AI<br>
+        MSCS @ UIUC<br>
         B.S. in Computer Science, Fudan University<br><br>
         <i>Let's embrace the endless possibilities and build something different!</i>
         <br>
