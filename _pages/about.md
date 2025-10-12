@@ -26,7 +26,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 I'm a founder, a researcher, a hacker and a builder in cool AI products. I got my Master (MSCS) degree from the University of Illinois at Urbana-Champaign (UIUC). I've been working closely with Prof. [Bolei Zhou](https://boleizhou.github.io/) and Prof. [Shenlong Wang](https://shenlong.web.illinois.edu/) on various projects related to 3D vision and embodied AI.
 
-I'm also the co-founder of [Manifolds-AI](https://manifolds-ai.com/). A startup that aims to provide a comprehensive solution for controllable 3D scene generation, simulation and modeling. Please check out our [website](https://manifolds-ai.com/) for more information.
+I'm also the co-founder of [Manifolds-AI](https://manifolds-ai.com/). A startup that aims to provide a comprehensive solution for controllable 3D scene generation, simulation and modeling. Please check out our [website](https://manifold-s.com/) for more information.
 
 Previously, I completed my undergraduate studies at Fudan University, where I specialized in computer science and was actively involved in the [Zhang Vision Group](https://fudan-zvg.github.io/) led by Prof. [Li Zhang](https://www.robots.ox.ac.uk/~lz/).
 
