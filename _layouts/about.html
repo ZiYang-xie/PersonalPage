@@ -20,7 +20,43 @@ layout: default
   .post a {
     font-family: 'Lexend', sans-serif !important;
   }
+
+  /* Project link styles */
+  .project-links a {
+    color: var(--global-text-color) !important;
+    background-color: var(--global-bg-color);
+  }
+  
+  .project-links a:hover {
+    background-color: var(--global-theme-color);
+    color: var(--global-bg-color) !important;
+    border-color: var(--global-theme-color);
+    text-decoration: none !important;
+  }
+
+  .project-links a:hover i {
+    color: var(--global-bg-color) !important;
+  }
 </style>
+
+<script>
+  // Fetch GitHub star count dynamically
+  document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://api.github.com/repos/ZiYang-xie/WorldGen')
+      .then(response => response.json())
+      .then(data => {
+        const starCount = data.stargazers_count;
+        const starElement = document.getElementById('worldgen-stars');
+        if (starElement && starCount !== undefined) {
+          starElement.textContent = starCount.toLocaleString();
+        }
+      })
+      .catch(error => {
+        console.log('Error fetching GitHub stars:', error);
+        // Keep the default value if fetch fails
+      });
+  });
+</script>
 
       <div class="post">
         <header class="post-header">
@@ -81,31 +117,40 @@ layout: default
 
           <hr class="post-separator">
 
+          <!-- Projects -->
+          <h3><span style="color: inherit; font-family: 'Lexend', sans-serif; font-weight: bold;">Projects</span></h3>
+          <div class="projects" style="margin-bottom: 1rem;">
+            <div class="row">
+              <div class="col-sm-3 preview">
+                <a href="https://worldgen.github.io/" target="_blank">
+                  <img class="preview rounded" src="{{ '/assets/img/WorldGen.png' | relative_url }}" alt="WorldGen" style="width: 100%; min-width: 80px; max-width: 200px; padding-top: 10px;">
+                </a>
+              </div>
+              <div class="col-sm-8">
+                <div class="title" style="font-weight: 450; font-size: 1.25rem;">WorldGen - Generate Any 3D Scene in Seconds</div>
+                <p style="margin-bottom: 0.5rem; margin-top: 0.5rem;">WorldGen is a powerful AI model that creates interactive 3D scenes from text and image inputs in seconds. It supports instant 3D generation from text or image and 360° free exploration with loop closure.</p>
+                <div class="project-links" style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 0.75rem;">
+                  <a href="https://worldgen.github.io/" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border: 1px solid var(--global-divider-color); border-radius: 4px; font-size: 0.875rem; transition: all 0.2s;">
+                    <i class="fas fa-globe"></i> Project Page
+                  </a>
+                  <a href="https://github.com/ZiYang-xie/WorldGen" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border: 1px solid var(--global-divider-color); border-radius: 4px; font-size: 0.875rem; transition: all 0.2s;">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                  <a href="https://github.com/ZiYang-xie/WorldGen" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border: 1px solid var(--global-divider-color); border-radius: 4px; font-size: 0.875rem; transition: all 0.2s;">
+                    <i class="fas fa-star" style="color: #f4c430;"></i> <span id="worldgen-stars">777</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="post-separator">
+
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <h3><a href="{{ '/publications/' | relative_url }}" style="color: inherit; font-family: 'Lexend', sans-serif; font-weight: bold;">Publications</a></h3>
             {%- include selected_papers.html %}
           {%- endif %}
-
-          <!-- Projects -->
-          <!-- <h3><span style="color: inherit; font-family: 'Lexend', sans-serif; font-weight: bold;">Projects</span></h3>
-          <div class="projects" style="margin-bottom: 1rem;">
-            <div class="project-entry" style="margin-bottom: 1rem;">
-              <h4 style="margin-bottom: 0.5rem;"><strong>WorldGen</strong></h4>
-              <p style="margin-bottom: 0.5rem;">A comprehensive world generation framework for 3D content creation.</p>
-              <div class="project-badges" style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
-                <a href="https://github.com/ZiYang-xie/WorldGen" target="_blank">
-                  <img src="https://img.shields.io/github/stars/ZiYang-xie/WorldGen?style=for-the-badge&logo=github&logoColor=white&color=yellow&labelColor=black" alt="GitHub Stars">
-                </a>
-                <a href="https://worldgen.github.io/" target="_blank">
-                  <img src="https://img.shields.io/badge/Project-Page-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Project Page">
-                </a>
-                <a href="https://github.com/ZiYang-xie/WorldGen" target="_blank">
-                  <img src="https://img.shields.io/badge/Code-Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository">
-                </a>
-              </div>
-            </div>
-          </div> -->
 
           <hr class="post-separator">
 
