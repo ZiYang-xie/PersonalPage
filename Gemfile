@@ -16,6 +16,7 @@ group :jekyll_plugins do
     gem 'mini_racer'
     gem 'unicode_utils'
     gem 'webrick'
+    gem 'sass-embedded', '~> 1.77.0'
 end
 group :other_plugins do
     gem 'httparty'
