@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 identity: AI Hacker, Startup Founder
-description: "<p>CS PhD Student @ UCLA<br>Co-Founder @ Manifolds-AI<br>MSCS @ UIUC<br>B.S. in Computer Science, Fudan University<br><br><b>My mission is to solve realworld physical problems (particularly <a href='https://en.wikipedia.org/wiki/Moravec%27s_paradox' target='_blank'>Moravec's Paradox</a>) with AI and build innovative products that augment human intelligence rather than replace us.</b><br></p>"
+description: "<p>CS PhD Student @ UCLA<br>Co-Founder @ Manifolds-AI<br>MSCS @ UIUC<br>B.S. in Computer Science, Fudan University<br><br><b>My mission is to solve realworld physical problems with AI (particularly <a href='https://en.wikipedia.org/wiki/Moravec%27s_paradox' target='_blank'>Moravec's Paradox</a>) and build innovative products that augment human intelligence rather than replace us.</b><br></p>"
           
 profile:
   align: left
