@@ -18,6 +18,11 @@ social: true  # includes social icons at the bottom of the page
 ---
 I'm a UCLA CS PhD Student with Prof. [Bolei Zhou](https://boleizhou.github.io/) as my advisor. I got my Master (MSCS) degree from the University of Illinois at Urbana-Champaign (UIUC). I've been working closely with Prof. [Yuxiong Wang](https://yxw.cs.illinois.edu) and Prof. [Shenlong Wang](https://shenlong.web.illinois.edu/) on various projects related to 3D vision and embodied AI. Previously, I completed my undergraduate studies at Fudan University and worked with Prof. [Li Zhang](https://www.robots.ox.ac.uk/~lz/)
 
-I was the co-founder of [Manifolds-AI](https://manifolds-ai.com/). A startup that aims to provide a comprehensive solution for controllable 3D scene generation, simulation and modeling to seamlessly integrate customer products in any environment.
+I was the co-founder of [Manifolds-AI](https://manifolds-ai.com/). A startup that aims to provide a comprehensive 3D native GenAI solution for e-commerce content creation.
 
 My research encompass various areas within 3D vision, simulation, generative models and intellegence systems that interact with the real world (e.g. self-driving and robotics). 
+
+---
+
+#### **Thesis**
+- Master Thesis: **[Build Realistic and Interactive 3D Scene Simulation from In-the-wild Videos]({{ '/assets/pdf/XIE-THESIS-2025.pdf' | relative_url }})**,  University of Illinois Urbana-Champaign, 2025.
