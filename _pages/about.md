@@ -7,7 +7,7 @@ description: "<p>CS PhD Student @ UCLA<br>MSCS @ UIUC<br>B.S. in Computer Scienc
           
 profile:
   align: left
-  image: prof_pic.jpg
+  image: avatar.png
   image_circular: true # crops the image to make it circular
   address: 
 
