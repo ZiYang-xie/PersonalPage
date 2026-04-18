@@ -2,8 +2,9 @@
 layout: about
 title: About
 permalink: /
-identity: AI Hacker, Startup Founder
-description: "<p>CS PhD Student @ UCLA<br>MSCS @ UIUC<br>B.S. in Computer Science, Fudan University<br><br><b>My mission is to solve realworld physical problems with AI (particularly <a href='https://en.wikipedia.org/wiki/Moravec%27s_paradox' target='_blank'>Moravec's Paradox</a>) and build innovative products that augment human intelligence rather than replace us.</b><br></p>"
+identity: Startup Founder, AI Hacker
+description: "<p>
+ Cofounder, CTO @ Braintrance <br> Computer Science Phd dropout @ UCLA | MSCS @ UIUC<br>B.S. in CS @ Fudan University<br><br><b>My mission is to solve physical world problems with AI and build innovative products that augment human intelligence rather than replace us.</b><br></p>"
           
 profile:
   align: left
@@ -16,11 +17,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 
 ---
-I'm a UCLA CS PhD Student with Prof. [Bolei Zhou](https://boleizhou.github.io/) as my advisor. I got my Master (MSCS) degree from the University of Illinois at Urbana-Champaign (UIUC). I've been working closely with Prof. [Yuxiong Wang](https://yxw.cs.illinois.edu) and Prof. [Shenlong Wang](https://shenlong.web.illinois.edu/) on various projects related to 3D vision and embodied AI. Previously, I completed my undergraduate studies at Fudan University and worked with Prof. [Li Zhang](https://www.robots.ox.ac.uk/~lz/)
+I'm the Co-Founder & CTO of [Braintrance](https://www.linkedin.com/company/braintrance-net/posts/?feedView=all), building a next-generation immersive media platform that brings 4D spatial content to everyone. Before Braintrance, I co-founded [Manifolds-AI](linkedin.com/company/manifolds-ai), a 3D native GenAI platform for e-commerce content creation.
 
-I was the co-founder of [Manifolds-AI](https://manifolds-ai.com/). A startup that aims to provide a comprehensive 3D native GenAI solution for e-commerce content creation.
+Previously, I studied CS at UCLA (advised by Prof. [Bolei Zhou](https://boleizhou.github.io/)). I received my Master's degree (MSCS) from UIUC, where I worked closely with Prof. [Yuxiong Wang](https://yxw.cs.illinois.edu) and Prof. [Shenlong Wang](https://shenlong.web.illinois.edu/). I completed my undergraduate studies at Fudan University with Prof. [Li Zhang](https://www.robots.ox.ac.uk/~lz/).
 
-My research encompass various areas within 3D vision, simulation, generative models and intellegence systems that interact with the real world (e.g. self-driving and robotics). 
+My work spans 3D vision, simulation, generative models, and intelligent systems that interact with the physical world.
 
 ---
 
