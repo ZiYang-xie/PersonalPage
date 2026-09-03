@@ -1,8 +1,9 @@
 ---
 layout: page
 title: WorldGen
-description: Generate Any 3D Scene in Seconds - A powerful AI model that creates interactive 3D scenes from text and image inputs with 360° free exploration support.
-img: assets/img/worldgen_logo.gif
+tagline: Generate Any 3D Scene in Seconds
+description: WorldGen is a powerful AI model that creates interactive 3D scenes from text and image inputs in seconds. It supports instant 3D generation from text or image and 360° free exploration with loop closure.
+img: assets/img/WorldGen.png
 redirect: https://worldgen.github.io/
 importance: 1
 category: 3D Generation

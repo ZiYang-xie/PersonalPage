@@ -40,28 +40,26 @@ layout: default
 </style>
 
 <script>
-  // Fetch GitHub star count dynamically
+  // Fetch GitHub star counts. The badge stays hidden unless a live count comes
+  // back, so a rate-limited or failed request never shows a stale number.
   document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://api.github.com/repos/ZiYang-xie/WorldGen')
-      .then(response => response.json())
-      .then(data => {
-        const starCount = data.stargazers_count;
-        const starElement = document.getElementById('worldgen-stars');
-        if (starElement && starCount !== undefined) {
-          starElement.textContent = starCount.toLocaleString();
-        }
-      })
-      .catch(error => {
-        console.log('Error fetching GitHub stars:', error);
-        // Keep the default value if fetch fails
-      });
+    document.querySelectorAll('[data-repo]').forEach(function(badge) {
+      fetch('https://api.github.com/repos/' + badge.dataset.repo)
+        .then(function(response) { return response.json(); })
+        .then(function(data) {
+          if (typeof data.stargazers_count !== 'number') return;
+          badge.querySelector('.star-count').textContent = data.stargazers_count.toLocaleString();
+          badge.style.display = 'inline-flex';
+        })
+        .catch(function(error) { console.log('Error fetching GitHub stars:', error); });
+    });
   });
 </script>
 
       <div class="post">
         <header class="post-header">
           <div class="row">
-            <div class="col-sm-3" style="border-right: 1px solid #e3e3e3; height: 110%;">
+            <div class="col-sm-3" style="border-right: 1px solid var(--global-divider-color);">
               {%- if page.profile.image %}
                   {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
 
@@ -91,7 +89,7 @@ layout: default
               {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
               </h1>
               <b>{{ page.identity }}</b>
-              <p>{{ page.description }}</p>
+              <p>{{ page.subtitle }}</p>
               {%- if page.social %}
                 {% include social.html %}
               {%- endif %}
@@ -119,30 +117,40 @@ layout: default
 
           <!-- Projects -->
           <h3><span style="color: inherit; font-family: 'Lexend', sans-serif; font-weight: bold;">Projects</span></h3>
+          {%- assign projects = site.projects | sort: "importance" -%}
+          {%- for project in projects %}
+          {%- assign project_url = project.redirect | default: project.url %}
           <div class="projects" style="margin-bottom: 1rem;">
             <div class="row">
               <div class="col-sm-3 preview">
-                <a href="https://worldgen.github.io/" target="_blank">
-                  <img class="preview rounded" src="{{ '/assets/img/WorldGen.png' | relative_url }}" alt="WorldGen" style="width: 100%; min-width: 80px; max-width: 200px; padding-top: 10px;">
+                <a href="{{ project_url }}" target="_blank">
+                  <img class="preview rounded" src="{{ project.img | relative_url }}" alt="{{ project.title }}" style="width: 100%; min-width: 80px; max-width: 200px; padding-top: 10px;">
                 </a>
               </div>
-              <div class="col-sm-8">
-                <div class="title" style="font-weight: 450; font-size: 1.25rem;">WorldGen - Generate Any 3D Scene in Seconds</div>
-                <p style="margin-bottom: 0.5rem; margin-top: 0.5rem;">WorldGen is a powerful AI model that creates interactive 3D scenes from text and image inputs in seconds. It supports instant 3D generation from text or image and 360° free exploration with loop closure.</p>
+              <div class="col-sm-9">
+                <div class="title" style="font-weight: 450; font-size: 1.25rem;">{{ project.title }}{% if project.tagline %} - {{ project.tagline }}{% endif %}</div>
+                <p style="margin-bottom: 0.5rem; margin-top: 0.5rem;">{{ project.description }}</p>
                 <div class="project-links" style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 0.75rem;">
-                  <a href="https://worldgen.github.io/" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border: 1px solid var(--global-divider-color); border-radius: 4px; font-size: 0.875rem; transition: all 0.2s;">
+                  {%- if project.redirect %}
+                  <a href="{{ project.redirect }}" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border: 1px solid var(--global-divider-color); border-radius: 4px; font-size: 0.875rem; transition: all 0.2s;">
                     <i class="fas fa-globe"></i> Project Page
                   </a>
-                  <a href="https://github.com/ZiYang-xie/WorldGen" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border: 1px solid var(--global-divider-color); border-radius: 4px; font-size: 0.875rem; transition: all 0.2s;">
+                  {%- endif %}
+                  {%- if project.github %}
+                  <a href="{{ project.github }}" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border: 1px solid var(--global-divider-color); border-radius: 4px; font-size: 0.875rem; transition: all 0.2s;">
                     <i class="fab fa-github"></i> Code
                   </a>
-                  <a href="https://github.com/ZiYang-xie/WorldGen" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border: 1px solid var(--global-divider-color); border-radius: 4px; font-size: 0.875rem; transition: all 0.2s;">
-                    <i class="fas fa-star" style="color: #f4c430;"></i> <span id="worldgen-stars">777</span>
+                  {%- endif %}
+                  {%- if project.github_stars %}
+                  <a href="https://github.com/{{ project.github_stars }}/stargazers" target="_blank" data-repo="{{ project.github_stars }}" style="display: none; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border: 1px solid var(--global-divider-color); border-radius: 4px; font-size: 0.875rem; transition: all 0.2s;">
+                    <i class="fas fa-star" style="color: #f4c430;"></i> <span class="star-count"></span>
                   </a>
+                  {%- endif %}
                 </div>
               </div>
             </div>
           </div>
+          {%- endfor %}
 
           <hr class="post-separator">
 

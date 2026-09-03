@@ -7,17 +7,19 @@ first_name: Ziyang
 middle_name: 
 last_name: Xie
 email: ziyangxie01@gmail.com
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Ziyang Xie personal pages
-footer_text: Fight For The Happiness of Humanity  (04/18/2026 Updated) # text displayed in the footer
-keywords: 
+description: >- # the ">" symbol means to ignore newlines until "footer_text:"
+  Ziyang Xie is the Co-Founder & CTO of Braintrance, building AI that understands and
+  recreates the physical world. Previously 3D vision and simulation research at UCLA,
+  UIUC and Fudan University.
+footer_text: Fight For The Happiness of Humanity # text displayed in the footer
+keywords: Ziyang Xie, Braintrance, spatial AI, world model, 3D vision, 3D generation, 4D reconstruction, WorldGen, Gaussian splatting, immersive media
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🚀  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: # the base hostname & protocol for your site
+url: https://ziyangxie.site # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -56,9 +58,9 @@ max_width: 800px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://ziyangxie.site/assets/img/avatar.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -67,7 +69,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: Ziyang-xie # your GitHub user name
 cv: '/assets/pdf/cv.pdf' # your CV link
 gitlab_username: # your GitLab user name
-twitter_username: # your Twitter handle
+twitter_username: ZiyangXie_ # your X (Twitter) handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: # your LinkedIn user name
 telegram_username: # your Telegram user name
@@ -79,7 +81,7 @@ medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
 research_gate_profile: # your profile on ResearchGate
-blogger_url: http://www.xcraft.tech/ # your blogger URL
+blogger_url: # your blogger URL (www.xcraft.tech no longer resolves)
 work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
